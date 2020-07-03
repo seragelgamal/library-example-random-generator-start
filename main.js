@@ -15,12 +15,12 @@ function randomNumber() {
     if (selection == 'dec0to1') {
         outputEl.innerHTML = Math.random();
     } else if (selection == 'dec0to50') {
-        outputEl.innerHTML = Math.random() * 50;
+        outputEl.innerHTML = randomDec(0, 50);
     } else if (selection == 'dec-10to10') {
-        outputEl.innerHTML = Math.random() * 20 - 10;
+        outputEl.innerHTML = randomDec(-10, 10);
     } else if (selection == 'int0to5') {
-        outputEl.innerHTML = Math.floor(Math.random() * 5);
+        outputEl.innerHTML = randomInt(0, 5);
     } else if (selection == 'int1to11') {
-        outputEl.innerHTML = Math.floor(Math.random() * 10 + 1);
+        outputEl.innerHTML = randomInt(1, 11);
     }
 }
